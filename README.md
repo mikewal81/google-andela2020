@@ -8,7 +8,7 @@ Deadline: Friday, Sept 11 2020
 
 Date Submitted : Friday, Sept 11 2020
 
-By : Michael N. Walusimbi
+By : Walusimbi Michael Ndugga
 
 
 ## Completed Labs      
