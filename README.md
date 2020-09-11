@@ -47,4 +47,4 @@ By : Michael N. Walusimbi
         
 ## N.B
 
-All compleieted labs that have only a timestamp were completed on the submission date.
+All completed labs that have only a timestamp and no date were completed on the submission date.
