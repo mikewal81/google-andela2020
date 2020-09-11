@@ -12,13 +12,16 @@
 ## Steps 
 1. Create a virtual machine using the GCP Console:      
 
-    gcloud compute instances create my-vm-1 --tags http          
+    gcloud compute instances create my-vm-1 --tags http      
+    
     gcloud compute firewall-rules create allow-http --destination=INGRESS --rules=http:80 --target-tags=http      
 
 2. Create a virtual machine using the gcloud command line:      
 
-    gcloud compute zones list | grep us-central1         
+    gcloud compute zones list | grep us-central1      
+    
     gcloud config set compute/zone us-central1-b          
+    
     gcloud compute instances create "my-vm-2" --machine-type "n1-standard-1" --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default"             
 
 3. Connect between VM instances:       
@@ -51,8 +54,10 @@
         - Confirm that my-vm-2 can reach the web server on my-vm-1, at the command prompt on my-vm-2, execute this command:     
             curl http://my-vm-1/         
             
-    ii. Get IP of my-vm-1 instance       
+    ii. Get IP of my-vm-1 instance    
+    
         gcloud compute instances list     
         
-    iii. Copy the External IP address for my-vm-1 and paste it into the address bar of a new browser tab.           
+    iii. Copy the External IP address for my-vm-1 and paste it into the address bar of a new browser tab.     
+    
         - Result : Home page including Custom Text will be in the browser      
