@@ -21,6 +21,7 @@
 
 3. Connect between VM instances:       
     i. Use the ping command to confirm that my-vm-2 can reach my-vm-1 over the network:      
+    
         - connect to my-vm-2:     
              gcloud compute ssh my-vm-2     
             
