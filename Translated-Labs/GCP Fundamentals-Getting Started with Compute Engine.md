@@ -11,13 +11,15 @@
     
 ## Steps 
 1. Create a virtual machine using the GCP Console:      
-    gcloud compute instances create my-vm-1 --tags http      
+
+    gcloud compute instances create my-vm-1 --tags http          
     gcloud compute firewall-rules create allow-http --destination=INGRESS --rules=http:80 --target-tags=http      
 
-2. Create a virtual machine using the gcloud command line:     
-    gcloud compute zones list | grep us-central1      
-    gcloud config set compute/zone us-central1-b      
-    gcloud compute instances create "my-vm-2" --machine-type "n1-standard-1" --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default"      
+2. Create a virtual machine using the gcloud command line:      
+
+    gcloud compute zones list | grep us-central1         
+    gcloud config set compute/zone us-central1-b          
+    gcloud compute instances create "my-vm-2" --machine-type "n1-standard-1" --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default"             
 
 3. Connect between VM instances:       
     i. Use the ping command to confirm that my-vm-2 can reach my-vm-1 over the network:      
