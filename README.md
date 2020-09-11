@@ -44,3 +44,7 @@ By : Michael N. Walusimbi
 
         GCP Fundamentals-Getting Started with Compute Engine       
         GCP Fundamentals-Getting Started with GKE
+        
+## N.B
+
+All compleieted labs that have only a timestamp were completed on the submission date.
